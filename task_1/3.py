@@ -6,4 +6,6 @@
 
 if __name__ == '__main__':
     str = input("Please enter a string: ")
-    
+    if len(str) < 2:
+        raise Exception("The line is less than two characters")
+    print(f"{str[:2]}{str[len(str) - 2:]}")
