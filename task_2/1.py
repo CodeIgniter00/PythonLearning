@@ -9,5 +9,5 @@ if __name__ == '__main__':
         radius: float = float(input("Input circle radius: "))
         S = round(math.pi * math.pow(radius, 2), 2)
         print(f"S = {S}")
-    except AttributeError:
+    except ValueError:
         print("You didn't enter a number")
