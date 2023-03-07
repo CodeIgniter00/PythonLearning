@@ -9,5 +9,5 @@ if __name__ == '__main__':
         number = int(input("Please enter a number: "))
         value = number + math.pow(number, 2) + math.pow(number, 3)
         print(f"Value = {value}")
-    except AttributeError:
+    except ValueError:
         print("You didn't enter a number")
